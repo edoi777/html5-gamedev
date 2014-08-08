@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML5 Game Development</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="Benj Tupas">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		    <script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+        <style>
+            span.photo-credit {
+                font-size: 18px !important;
+                text-align: left !important;
+            }
+
+            #frame {
+                -ms-zoom: 50%;
+                -moz-transform: scale(0.50);
+                -moz-transform-origin: 0 0;
+                -o-transform: scale(0.50);
+                -o-transform-origin: 0 0;
+                -webkit-transform: scale(0.50);
+                -webkit-transform-origin: 0 0;
+            }
+        </style>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section data-markdown>
+                    <script type="text/template">
+                        ## HTML5 GAME DEVELOPMENT
+
+                        <img src="images/intro-banner.png"/>
+                    </script>
+                </section>
+
+                <!-- Read the following -->
+                <!-- http://www.forbes.com/sites/ciocentral/2013/01/23/html5-vs-native-mobile-apps-myths-and-misconceptions/-->
+                <!-- http://venturebeat.com/2013/11/20/html5-vs-native-vs-hybrid-mobile-apps-3500-developers-say-all-three-please/ -->
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Benj Tupas
+                        <img src="images/workstation.png"/>
+
+                        60% Framework + 30% Games + 10% Engineer
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Why HTML5?
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Execution
+
+                        <img src="images/browsers.jpg"/> <br/>
+
+                        <span class='photo-credit'> Photo: http://tympanus.net/codrops/ </span>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Support
+                        <ul>
+                            <li> Chrome - 3.0+ </li>
+                            <li> Firefox - 3.0+ </li>
+                            <li> Safari - 3.0+ </li>
+                            <li> Opera - 10.0+ </li>
+                            <li> IE - 9.0+ </li>
+                        </ul>
+
+                        <span class='photo-credit'> From: http://diveintohtml5.info/canvas.html </span>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Multiplatform
+
+                        <img src="images/devices.jpg"/> <br/>
+                        <span class='photo-credit'> Photo: http://freebieswbug.com/ </span>
+                    </script>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Community
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Google
+
+                            <img src="images/html5-google-search.png"/> <br/>
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Youtube
+
+                            <img src="images/html5-youtube-search.png"/> <br/>
+                        </script>
+                    </section>
+
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Social pages and communities
+
+                            <img src="images/html5-google-plus.png"/> <br/>
+                        </script>
+                    </section>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Sample HTML5 App
+
+                        <iframe width='960' height='600' src="http://www.vlog.it/?scid=social29180856"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Sample HTML5 Game
+
+                        <iframe width='960' height='600' src="http://hellorun.helloenjoy.com/"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Sample HTML5 Game
+
+                        <iframe width='960' height='700' src="http://phoboslab.org/xibalba/"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Code
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## 1. Canvas Hello World
+                        <iframe width='820' height='620' src="demos/canvas.html"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## 2. Game Loop
+                        <iframe width='820' height='620' src="demos/game-loop.html"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## 3. Image
+                        <iframe width='820' height='620' src="demos/image.html"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## 4. Animation
+                        <iframe width='820' height='620' src="demos/animation.html"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## 5. Input
+                        <iframe width='820' height='620' src="demos/input.html"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## 6. Sound
+                        <iframe width='820' height='620' src="demos/sound.html"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## What's next?
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## w3schools.com
+                        <iframe width='1000' height='500' src="http://www.w3schools.com/"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## html5 canvas tutorials.com
+                        <iframe width='1000' height='500' src="http://www.html5canvastutorials.com/"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                       ## html5 game development.com
+                        <iframe width='1000' height='500' src="http://www.html5gamedevelopment.com/"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## packtpub.com
+
+                        <iframe width='960' height='600' src="http://www.packtpub.com/"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## oreilly.com
+
+                        <iframe width='960' height='600' src="http://www.oreilly.com/"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## html5quintus.com
+
+                        <iframe width='960' height='600' src="http://html5quintus.com/"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## impactjs.com
+
+                        <iframe width='960' height='600' src="http://impactjs.com/"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## box2d-js.sourceforge.net/
+
+                        <iframe width='960' height='600' src="http://box2d-js.sourceforge.net/"></iframe>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## phonegap.com/
+
+                        <iframe width='960' height='600' src="http://phonegap.com/"></iframe>
+                    </script>
+                </section>
+            </div>
+        </div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
