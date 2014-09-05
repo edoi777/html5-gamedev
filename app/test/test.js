@@ -1,5 +1,5 @@
 
-// These tests expect the DOM to contain a presentation
+// These tests expect the DOM to contain a app
 // with the following slide structure:
 //
 // 1

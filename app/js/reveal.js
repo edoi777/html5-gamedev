@@ -17,8 +17,8 @@ var Reveal = (function(){
 		// Configurations defaults, can be overridden at initialization time
 		config = {
 
-			// The "normal" size of the presentation, aspect ratio will be preserved
-			// when the presentation is scaled to fit different resolutions
+			// The "normal" size of the app, aspect ratio will be preserved
+			// when the app is scaled to fit different resolutions
 			width: 960,
 			height: 700,
 
@@ -32,7 +32,7 @@ var Reveal = (function(){
 			// Display controls in the bottom right corner
 			controls: true,
 
-			// Display a presentation progress bar
+			// Display a app progress bar
 			progress: true,
 
 			// Display the page number of the current slide
@@ -53,16 +53,16 @@ var Reveal = (function(){
 			// Enables touch navigation on devices with touch input
 			touch: true,
 
-			// Loop the presentation
+			// Loop the app
 			loop: false,
 
-			// Change the presentation direction to be RTL
+			// Change the app direction to be RTL
 			rtl: false,
 
 			// Turns fragments on and off globally
 			fragments: true,
 
-			// Flags if the presentation is running in an embedded mode,
+			// Flags if the app is running in an embedded mode,
 			// i.e. contained within a limited portion of the screen
 			embedded: false,
 
@@ -133,7 +133,7 @@ var Reveal = (function(){
 		// all current slides.
 		state = [],
 
-		// The current scale of the presentation (see width/height config)
+		// The current scale of the app (see width/height config)
 		scale = 1,
 
 		// Cached references to DOM elements
@@ -180,7 +180,7 @@ var Reveal = (function(){
 		};
 
 	/**
-	 * Starts up the presentation if the client is capable.
+	 * Starts up the app if the client is capable.
 	 */
 	function initialize( options ) {
 
@@ -190,7 +190,7 @@ var Reveal = (function(){
 			document.body.setAttribute( 'class', 'no-transforms' );
 
 			// If the browser doesn't support core features we won't be
-			// using JavaScript to control the presentation
+			// using JavaScript to control the app
 			return;
 		}
 
@@ -319,7 +319,7 @@ var Reveal = (function(){
 		// Resets all vertical slides so that only the first is visible
 		resetVerticalSlides();
 
-		// Updates the presentation to match the current configuration values
+		// Updates the app to match the current configuration values
 		configure();
 
 		// Read the initial hash
@@ -328,7 +328,7 @@ var Reveal = (function(){
 		// Update all backgrounds
 		updateBackground( true );
 
-		// Notify listeners that the presentation is ready but use a 1ms
+		// Notify listeners that the app is ready but use a 1ms
 		// timeout to ensure it's not fired synchronously after #initialize()
 		setTimeout( function() {
 			// Enable transitions now that we're loaded
@@ -347,7 +347,7 @@ var Reveal = (function(){
 
 	/**
 	 * Finds and stores references to DOM elements which are
-	 * required by the presentation. If a required element is
+	 * required by the app. If a required element is
 	 * not found, it is created.
 	 */
 	function setupDOM() {
@@ -510,7 +510,7 @@ var Reveal = (function(){
 
 			// Make sure the below properties are set on the element - these properties are
 			// needed for proper transitions to be set on the element via CSS. To remove
-			// annoying background slide-in effect when the presentation starts, apply
+			// annoying background slide-in effect when the app starts, apply
 			// these properties after short time delay
 			setTimeout( function() {
 				dom.wrapper.classList.add( 'has-parallax-background' );
@@ -1021,7 +1021,7 @@ var Reveal = (function(){
 
 	/**
 	 * Applies JavaScript-controlled layout rules to the
-	 * presentation.
+	 * app.
 	 */
 	function layout() {
 
@@ -1109,7 +1109,7 @@ var Reveal = (function(){
 
 	/**
 	 * Applies layout logic to the contents of all slides in
-	 * the presentation.
+	 * the app.
 	 */
 	function layoutSlideContents( width, height, padding ) {
 
@@ -1435,7 +1435,7 @@ var Reveal = (function(){
 	}
 
 	/**
-	 * Steps from the current point in the presentation to the
+	 * Steps from the current point in the app to the
 	 * slide which matches the specified horizontal and vertical
 	 * indices.
 	 *
@@ -1581,7 +1581,7 @@ var Reveal = (function(){
 	}
 
 	/**
-	 * Syncs the presentation with the current DOM. Useful
+	 * Syncs the app with the current DOM. Useful
 	 * when new slides or control elements are added or when
 	 * the configuration has changed.
 	 */
@@ -1638,7 +1638,7 @@ var Reveal = (function(){
 
 	/**
 	 * Sorts and formats all of fragments in the
-	 * presentation.
+	 * app.
 	 */
 	function sortAllFragments() {
 
@@ -2150,7 +2150,7 @@ var Reveal = (function(){
 	}
 
 	/**
-	 * Checks if this presentation is running inside of the
+	 * Checks if this app is running inside of the
 	 * speaker notes window.
 	 */
 	function isSpeakerNotes() {
@@ -2490,9 +2490,9 @@ var Reveal = (function(){
 			// Cue the next auto-slide if:
 			// - There is an autoSlide value
 			// - Auto-sliding isn't paused by the user
-			// - The presentation isn't paused
+			// - The app isn't paused
 			// - The overview isn't active
-			// - The presentation isn't over
+			// - The app isn't over
 			if( autoSlide && !autoSlidePaused && !isPaused() && !isOverview() && ( !Reveal.isLastSlide() || config.loop === true ) ) {
 				autoSlideTimeout = setTimeout( navigateNext, autoSlide );
 				autoSlideStartTime = Date.now();
@@ -3308,7 +3308,7 @@ var Reveal = (function(){
 			return currentSlide;
 		},
 
-		// Returns the current scale of the presentation content
+		// Returns the current scale of the app content
 		getScale: function() {
 			return scale;
 		},
