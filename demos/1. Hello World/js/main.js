@@ -1,11 +1,8 @@
 var CANVAS = null;
-var CANVAS_WIDTH = 0;
-var CANVAS_HEIGHT = 0;
-
 var CONTEXT = null;
 
-$( document ).ready(function() {
-    CANVAS = $( '#canvas' )[0];
+$(document).ready(function() {
+    CANVAS = $('#canvas')[0];
     CONTEXT = CANVAS.getContext( "2d" );
 
     draw();
