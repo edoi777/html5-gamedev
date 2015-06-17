@@ -1,0 +1,13 @@
+<div>
+	<input ng-model="platformName" type="text" class="form-control" placeholder="Enter platform to search">
+
+	<br/>
+
+	<div class="row">
+        <div class="col-sm-4" ng-repeat="platform in platforms | filter : platformName">
+             <a href="#/platform/{{platform.name.toLowerCase()}}">
+                  <thumbnail platform="platform"></thumbnail>
+             </a>
+        </div>
+    </div>
+</div>

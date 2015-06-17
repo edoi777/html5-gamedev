@@ -1,0 +1,1 @@
+var AngularjsApp = angular.module('AngularjsApp', []);

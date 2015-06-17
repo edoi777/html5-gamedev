@@ -1,325 +1,296 @@
 <!doctype html>
 <html lang="en">
+<head>
+	<meta charset="utf-8">
 
-	<head>
-		<meta charset="utf-8">
+	<title>HTML5 Game Development</title>
 
-		<title>HTML5 Game Development</title>
+	<meta name="description" content="Codelab for Devcon">
+	<meta name="author" content="Benj Tupas">
 
-		<meta name="description" content="">
-		<meta name="author" content="Benj Tupas">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css" id="theme">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/main.css">
+</head>
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+<body>
 
-		<!--[if lt IE 9]>
-		    <script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+	<div class="reveal">
+		<div class="slides">
 
-        <style>
-            span.photo-credit {
-                font-size: 18px !important;
-                text-align: left !important;
-            }
+			<section>
+				<h3> HTML5 Game Development </h3>
 
-            #frame {
-                -ms-zoom: 50%;
-                -moz-transform: scale(0.50);
-                -moz-transform-origin: 0 0;
-                -o-transform: scale(0.50);
-                -o-transform-origin: 0 0;
-                -webkit-transform: scale(0.50);
-                -webkit-transform-origin: 0 0;
-            }
-        </style>
-	</head>
+				<img src="images/site_banner.png"/>
+				<small><small> photo from: http://www.truevalhalla.com/ </small></small>
 
-	<body>
-		<div class="reveal">
-			<div class="slides">
-                <section data-markdown>
-                    <script type="text/template">
-                        <img src="images/banner.png"/>
-                    </script>
-                </section>
+				<hr/>
+					<h4> - Benj Tupas - </h4>
+					<p> 
+						<small> 
+							Mobile and Web Developer <br/>
+							bmatupas@gmail.com 
+						</small>
+					</p>
+				<hr/>
+			</section>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        <img src="images/blueprint-gaming.png"/>
-                    </script>
-                </section>
+			<section>
+				<img src="images/blueprint-gaming.png"/>
+			</section>
 
-                <section>
-                    <iframe width="700" height="500" src="https://www.youtube.com/embed/mzPxo7Y6JyA" frameborder="0" allowfullscreen></iframe>
-                </section>
+			<section>
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/mzPxo7Y6JyA" frameborder="0" allowfullscreen></iframe>
+            </section>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Why HTML5?
-                    </script>
-                </section>
+			<section>
+				<h2> What to Expect </h2>
 
-                <section>
-                    <section data-markdown>
-                        <script type="text/template">
-                            ## Execution
+				<hr/>
 
-                            <img src="images/browsers.jpg"/> <br/>
+				<iframe 
+					width="1000px" 
+					height="500px" 
+					src="demos/5. Inputs/index.html"></iframe>
+			</section>
 
-                            <span class='photo-credit'> Photo: http://tympanus.net/codrops/ </span>
-                        </script>
-                    </section>
+			<section>
+				<section>
+					<h2> Why HTML5? </h2>
 
-                    <section data-markdown>
-                        <script type="text/template">
-                            ## Support
-                            <ul>
-                                <li> Chrome - 3.0+ </li>
-                                <li> Firefox - 3.0+ </li>
-                                <li> Safari - 3.0+ </li>
-                                <li> Opera - 10.0+ </li>
-                                <li> IE - 9.0+ </li>
-                            </ul>
+					<hr/>
 
-                            <span class='photo-credit'> From: http://diveintohtml5.info/canvas.html </span>
-                        </script>
-                    </section>
-                </section>
+					<img src="images/future-is-landing.png"/>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Multiplatform
+					<p>
+						<small><small>http://www.isquareinfotech.com/</small></small>
+					</p>
+				</section>
 
-                        <img src="images/devices.jpg"/> <br/>
-                        <span class='photo-credit'> Photo: http://freebieswbug.com/ </span>
-                    </script>
-                </section>
+				<section>
+					<h2> Execution </h2>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Community/Open Source
-                    </script>
-                </section>
+					<hr/>
 
+					<img src="images/enhances.png"/>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Sample HTML5 App
+					<p>
+						<small><small>http://www.amtevolve.com/</small></small>
+					</p>
+				</section>
 
-                        <iframe width='960' height='600' src="http://www.vlog.it/"></iframe>
-                    </script>
-                </section>
+				<section>
+					<h2>Downside: Canvas Support </h2>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Sample HTML5 Game
+					<hr/>
 
-                        <iframe width='960' height='600' src="http://hellorun.helloenjoy.com/"></iframe>
-                    </script>
-                </section>
+					<table>
+						<thead>
+							<tr>
+								<th>Browser</th>
+								<th>Version</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Chrome</td>
+								<td>3.0+</td>
+							<tr>
+							<tr>
+								<td>Firefox</td>
+								<td>3.0+</td>
+							<tr>
+							<tr>
+								<td>Safari</td>
+								<td>3.0+</td>
+							<tr>
+							<tr>
+								<td>Opera</td>
+								<td>10.0+</td>
+							<tr>
+							<tr>
+								<td>IE</td>
+								<td>9.0+</td>
+							<tr>
+						</tbody>
+					</table>
+				</section>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Sample HTML5 Game
+				<section>
+					<h2> Growth </h2>
 
-                        <iframe width='960' height='700' src="http://phoboslab.org/xibalba/"></iframe>
-                    </script>
-                </section>
+					<hr/>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Code
-                    </script>
-                </section>
+					<img src="images/grow.jpg"/>
+				</section>
+			</section>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## 1. Canvas Hello World
-                        <iframe width='960' height='560' src="demos/1.%20Hello%20World/index.html"></iframe>
-                    </script>
-                </section>
+			<section>
+				<h2> vlog.it </h2>
+				<hr/>
+                
+                <iframe width='1150' height='500' src="http://www.vlog.it/"></iframe>
+            </section>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## 2. Game Loop
-                        <iframe width='960' height='560' src="demos/2.%20Game%20Loop/index.html"></iframe>
-                    </script>
-                </section>
+            <section>
+				<h2> phoboslab.org/xibalba </h2>
+				<hr/>
+                
+                <iframe width='1150' height='500' src="http://phoboslab.org/xibalba/"></iframe>
+            </section>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## 3. Image
-                        <iframe width='960' height='560' src="demos/3.%20Adding%20Player/index.html"></iframe>
-                    </script>
-                </section>
+			<section>
+				<h2> Code </h2>
+			</section> 
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## 4. Animation
-                        <iframe width='960' height='560' src="demos/4.%20Animation/index.html"></iframe>
-                    </script>
-                </section>
+			<section>
+				<h2> What is needed? </h2>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## 5. Input
-                        <iframe width='960' height='560' src="demos/5.%20Inputs/index.html"></iframe>
-                    </script>
-                </section>
+				<hr/>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## github.com/bmatupas/
-                        ## html5-gamedev
-                    </script>
-                </section>
+				<ol>
+					<li> Jquery </li>
+					<ul>
+						<li> https://jquery.com/download/ </li>
+					</ul>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## What's next?
-                    </script>
-                </section>
+					<li> Super Mario </li>
+					<ul>
+						<li> https://goo.gl/FcW8E7 </li>
+					</ul>
+				</ol>
+			</section> 
 
-               
-                <section data-markdown>
-                    <script type="text/template">
-                        ## w3schools
-                        <iframe width='1000' height='600' src=" http://www.w3schools.com/"></iframe>
-                    </script>
-                </section>
+			<section>
+				<h2> Initial Setup </h2>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## html5 canvas tutorials.com
-                        <iframe width='1000' height='600' src="http://www.html5canvastutorials.com/"></iframe>
-                    </script>
-                </section>
+				<hr/>
 
-                <section data-markdown>
-                    <script type="text/template">
-                       ## html5 game development.com
-                        <iframe width='1000' height='600' src="http://www.html5gamedevelopment.com/"></iframe>
-                    </script>
-                </section>
+				<ol>
+					<li> Create a project folder. </li>
+					<li> Create a "libs" folder inside. </li>
+					<ul>
+						<li> Paste "jquery-1.11.2.min.js" </li>
+					</ul>
+					<li> Create index.html </li>
+				</ol>
+			</section>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## packtpub.com
+			<section>
+				<h2> 1. Hello World </h2>
 
-                        <iframe width='960' height='600' src="https://www.packtpub.com/all/?search=HTML5%20game#"></iframe>
-                    </script>
-                </section>
+				<hr/>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## oreilly.com
+				<iframe 
+					width="1200px" 
+					height="700px" 
+					src="demos/1. Hello World/index.html"></iframe>
+			</section>
 
-                        <iframe width='960' height='600' src="http://search.oreilly.com/?q=HTML5+game&x=0&y=0"></iframe>
-                    </script>
-                </section>
+			<section>
+				<h2> 2. Game Loop </h2>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## html5quintus.com
+				<hr/>
 
-                        <iframe width='960' height='600' src="http://html5quintus.com/"></iframe>
-                    </script>
-                </section>
+				<iframe 
+					width="1200px" 
+					height="700px" 
+					src="demos/2. Game Loop/index.html"></iframe>
+			</section>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## impactjs.com
+			<section>
+				<h2> 3. Adding Player </h2>
 
-                        <iframe width='960' height='600' src="http://impactjs.com/"></iframe>
-                    </script>
-                </section>
+				<hr/>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## box2d-js.sourceforge.net/
+				<iframe 
+					width="1200px" 
+					height="700px" 
+					src="demos/3. Adding Player/index.html"></iframe>
+			</section>
 
-                        <iframe width='960' height='600' src="http://box2d-js.sourceforge.net/"></iframe>
-                    </script>
-                </section>
+			<section>
+				<h2> 4. Animation</h2>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        ## phonegap.com/
+				<hr/>
 
-                        <iframe width='960' height='600' src="http://phonegap.com/"></iframe>
-                    </script>
-                </section>
+				<iframe 
+					width="1200px" 
+					height="700px" 
+					src="demos/4. Animation/index.html"></iframe>
+			</section>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        <img src="images/obama.png"/>
-                    </script>
-                </section>
+			<section>
+				<h2> 5. Inputs </h2>
 
-                <section data-markdown>
-                    <script type="text/template">
-                        <h3 class="slide-title"> Presentation at </h3>
-                        <h3 class="slide-title">
-                            <strong>
-                                codefaci.com/slide/html5-gamedev/index.html
-                            </strong>
-                        </h3>
-                    </script>
-                </section>
-            </div>
-        </div>
+				<hr/>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+				<iframe 
+					width="1200px" 
+					height="700px" 
+					src="demos/5. Inputs/index.html"></iframe>
+			</section>
 
-		<script>
+			<section>
+				<h1> What's next? </h1>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+				<br/>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				<ol> 
+					<li> udacity.com/wiki/cs255 </li>
+					<li> Search "html5 game" packtpub.com and oreilly.com</li>
+					<li> impactjs.com </li>
+					<li> phonegap.com or cordova.apache.org </li>
+					<li> html5canvastutorials.com/ </li>
+					<li> html5gamedevelopment.com/ </li>
+				</ol>
+			</section>
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+			<section>
+				<h3> Code: github.com/bmatupas/html5-gamedev </h3>
+				<h3> Demos: github.com/bmatupas/html5-gamedev/tree/master/demos </h3>
+			</section>
+		</div>
+	</div>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		</script>
+	<script>
 
-	</body>
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// Optional reveal.js plugins
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+
+	</script>
+</body>
 </html>
