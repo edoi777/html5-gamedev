@@ -3,13 +3,18 @@ $(document).ready(init);
 var CANVAS = null;
 var CONTEXT = null;
 
-var frameCount = 0;
 var FPS = 60;
 var FRAME_RATE = 1000/FPS;
+
+var entityMario = null;
+var entityBird = null;
 
 function init() {
 	CANVAS = $("#canvas")[0];
 	CONTEXT = CANVAS.getContext("2d");
+
+	entityMario = new Entity(100, 100, "images/super-mario.png");
+	entityBird = new Entity(700, 100, "images/angry-bird.png");
 
 	setInterval(function() {
 		update();
@@ -18,14 +23,14 @@ function init() {
 }
 
 function update() {
-	frameCount++;
+	entityMario.update();
+	entityBird.update();
 }
 
 function draw() {
 	CONTEXT.fillStyle = "#000";
     CONTEXT.fillRect(0,0, CANVAS.width, CANVAS.height);
 
-    CONTEXT.font = '30px Sans-Serif';
-    CONTEXT.fillStyle = "#FFF";
-    CONTEXT.fillText('Frames drawn: ' + frameCount, 50, 50);
+    entityMario.draw();
+    entityBird.draw();
 }

@@ -1,6 +1,7 @@
-function Player(x,y,imageSrc){
-	this.pos = {x:0, y:0};
-	this.size = {width:0, height:0};
+function Entity(x,y,imageSrc) {
+	this.pos = {x: 0, y: 0};
+	this.size = {width: 0, height: 0};
+	
 	this.image = new Image();
 
 	this.init = function(x,y,imageSrc) {
@@ -8,11 +9,10 @@ function Player(x,y,imageSrc){
 		this.pos.y = y;
 
 		this.image.src = imageSrc; 
-		this.image.onload = this.imageOnLoad.bind(this);
+		this.image.onload = this.imageOnLoadCallback.bind(this);
 	}
 
-	this.imageOnLoad = function(data) {
-		alert("");
+	this.imageOnLoadCallback = function() {
 		this.size.width = this.image.width;
 		this.size.height = this.image.height;
 	}
