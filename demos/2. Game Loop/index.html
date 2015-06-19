@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Canvas </title>
-    <link rel="stylesheet" href="css/reset.css"/>
+	<title> HTML5 Game </title>
 </head>
-<body>
-    <canvas id="canvas" width="1150" height="500"></canvas>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
+<body>
+	<canvas id="canvas" width="1000px" height="500px"></canvas>
+
+	<script src="libs/jquery-1.11.3.min.js"></script>
+	<script>
+		$(document).ready(init);
+
+		var CANVAS = null;
+		var CONTEXT = null;
+
+		var frameCount = 0;
+		var FPS = 60;
+		var FRAME_RATE = 1000/FPS;
+
+		function init() {
+			CANVAS = $("#canvas")[0];
+			CONTEXT = CANVAS.getContext("2d");
+
+			setInterval(function() {
+				update();
+				draw();
+			}, FRAME_RATE);
+		}
+
+		function update() {
+			frameCount++;
+		}
+
+		function draw() {
+			CONTEXT.fillStyle = "#000";
+		    CONTEXT.fillRect(0,0, CANVAS.width, CANVAS.height);
+
+		    CONTEXT.font = '30px Sans-Serif';
+		    CONTEXT.fillStyle = "#FFF";
+		    CONTEXT.fillText('Frames drawn: ' + frameCount, 50, 50);
+		}
+	</script>
 </body>
 </html>
