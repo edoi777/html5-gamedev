@@ -19,7 +19,7 @@ function init() {
 	    DOWN:83,
 	    RIGHT:68
 	};
-	entityMario = new Entity(100, 100, "images/super-mario.png", keyCodesMario);
+	entityMario = new Entity(100, 100, "images/super-mario.png", keyCodesMario, true);
 
 	var keyCodesBird ={
 	    UP: 38,
@@ -27,7 +27,7 @@ function init() {
 	    DOWN: 40,
 	    RIGHT: 39
 	};
-	entityBird = new Entity(700, 100, "images/angry-bird.png", keyCodesBird);
+	entityBird = new Entity(700, 100, "images/angry-bird.png", keyCodesBird, false);
 
 	setInterval(function() {
 		update();
@@ -40,9 +40,24 @@ function update() {
 	entityBird.update();
 }
 
+function hasCollided(one, two) {
+	 if(one.pos.x < two.pos.x + two.size.width &&
+		   one.pos.x + one.size.width > two.pos.x &&
+		   one.pos.y < two.pos.y + two.size.height &&
+		   one.size.height + one.pos.y > two.pos.y) {
+	    return true;
+	}
+}
+
 function draw() {
 	CONTEXT.fillStyle = "#000";
     CONTEXT.fillRect(0,0, CANVAS.width, CANVAS.height);
+
+    if(hasCollided(entityMario, entityBird)) {
+    	CONTEXT.font = '30px Sans-Serif';
+	    CONTEXT.fillStyle = "#FFF";
+	    CONTEXT.fillText('Ouch!', 50, 50);
+    }
 
     entityMario.draw();
     entityBird.draw();
